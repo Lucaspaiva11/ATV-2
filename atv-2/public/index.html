@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="form-group">
+            <input type="hidden" id="itemId">
+            <input type="text" id="nomeProduto" placeholder="Nome do produto">
+            <input type="number" id="valorProduto" placeholder="Valor do produto" step="0.01">
+            <button id="btnAdicionar" onclick="salvarProduto()">Adicionar Produto</button>
+        </div>
+        <ul id="listaProdutos"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
